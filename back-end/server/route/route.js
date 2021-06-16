@@ -6,8 +6,9 @@ router.get('/posts', async function(req,res){
     const posts = await postsService.getPosts();
     res.json(posts);
 });
-router.get('/posts/:id',async function(req,res){
-    res.end();
+router.get('/posts/:id',async function(req,res){    
+    const posts = await postsService.getById(req.params.id);
+    res.json(posts);
 });
 router.post('/posts',async function(req,res){
     res.end();
