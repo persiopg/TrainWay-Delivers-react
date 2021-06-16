@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "dev": "nodemon"
+        "dev": "nodemon sever.js",
+        "test": "jest --env node"
     },
     "dependencies": {
         "axios": "^0.21.1",
